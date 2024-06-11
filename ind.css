@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* =========================================NAV BAR================================================= */
+.my-nav{
+    background-color: rgb(20, 20, 27);
+    color: #f2f2f2;
+    position: fixed;
+    width: 100%;
+}
+.my-nav .my-nav-item{
+    color: #f2f2f2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.my-nav .my-nav-item:hover{
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+.my-drop-menu{
+    background-color: rgb(50, 50, 68);
+    
+}
+.my-drop-link{
+    color: #f2f2f2;
+    font-weight: 500;
+}
+/* =========================================HOME================================================= */
+
+section#home{
+    height: 100vh;
+    background-color: rgb(20, 20, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.greet{
+    color: #f2f2f2;
+}
+.my-name{
+    color: #f2f2f2;
+    font-weight: 600;
+
+}
+.my-name span{
+    color: rgb(220, 53, 70);
+}
+.my-occ{
+    color: #94a1b2;
+    font-weight: 500;
+}
+.desc{
+    color: #fffffe;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.h-btns{
+    margin-top: 3vh;
+    display: flex;
+    gap: 1.5rem;
+}
+.h-btn {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: rgb(220, 53, 70);
+    color: #f2f2f2;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+   
+.h-btn:hover {
+    box-shadow: 7px 5px 56px -14px rgb(220, 53, 70);
+}
+   
+.h-btn:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+}
+.my-icon-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.my-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.my-icon-link {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.476);
+    color: #f2f2f2;
+    gap: .5em;
+    cursor: pointer;
+    transition: all .6s ease;
+    text-decoration: none;
+}
+  
+.my-icon-link svg {
+    height: 30px;
+}
+.my-icon-link:hover{
+    background-color: rgb(220, 53, 70);
+    transform: scale(1.2);
+}
+@media only screen and (max-width: 767px) {
+    .my-icon-page{
+        margin-top: 5vh;
+        display: block;   
+    }
+    .my-icon-link{
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+/* ============ABOUT SECTION BEGIN=================================================================== */
+section#about{
+    height: auto;
+    background-color: rgb(20, 20, 27);
+    overflow-x: hidden;
+}
+.abt-img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.abt-img img{
+    border-radius: 23px;
+
+}
+.abouthead{
+    color:rgb(220, 53, 70);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.aboutpara{
+    color:azure;
+    font-size: 1.2rem;
+}
+ul li{
+    color: azure;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.icon :hover{
+    background-color: rgb(220, 53, 70);
+}
+
+
+
+
+/* ===============================SKILL SECTION======================================== */
+section#skill{
+    height: auto;
+    width: 100%;
+    padding-top: 5vh;
+    background-color: rgb(20, 20, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20vh;  
+    position: relative;
+    z-index: -1;
+}
+
+.card1{
+    height: auto;
+    width: 100%;
+    background-color: rgb(15, 15, 32);
+    border: 2px solid rgb(59, 56, 56);
+    margin-bottom: 3vh;
+    border-radius: 3vh;   
+    z-index: -1; 
+}
+.cardtitle{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.1vh;
+    padding-top: 0.2vh;
+    text-transform: uppercase;
+    color: rgb(240,255,255);
+}
+
+.cardtext{
+    padding: 0.5vh;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(240,255,255,0.9);
+    text-align: center;
+    
+}
+.imgdiv{
+    
+    display: flex;
+    justify-content: center;
+    height: 17vh;
+}
+.skillheading{
+    text-align: center;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 4.3rem;
+    letter-spacing: 1.5vh;
+    padding-bottom: 4vh;
+}
+.cardtitle:hover{
+    background-color: rgb(220, 53, 70);
+    color: rgb(21, 17, 17);
+
+}
+
+/* =========================================RESUME SECTION============================================= */
+#resume{
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 20, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    position: relative;
+    z-index: -1;
+}
+.resumeheading{
+    padding-bottom: 4vh;
+}
+
+.education{
+    width: 100%;
+    height: auto;
+    color:azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3vh;
+    background-color: rgb(15, 15, 32);
+    border: 2px solid rgb(59, 56, 56);
+   
+   
+}
+.education h2{
+    color: rgb(82, 32, 11);
+    font-size: 2rem;
+    letter-spacing: 0.2vh;
+    word-spacing: 0.5vh;
+}
+.interest h2{
+    letter-spacing: 0.2vh;
+    word-spacing: 0.5vh;
+    color: rgb(82, 32, 11);
+    font-size: 2.3rem;
+}
+.education p{
+    font-size: 1.2rem;
+    color: azure;
+}
+.education h5{
+    font-size: 1.4rem;
+    color: azure;
+}
+
+.interest{
+    background-color: rgb(15, 15, 32);
+    border: 2px solid rgb(59, 56, 56);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   padding: 2vh;
+   border-radius: 5vh;
+   color: azure;
+}
+.interest ul li{
+    font-size: 1.2rem;
+}
+.interest ul{
+    list-style: none;
+}
+
+.headingedu{
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(220, 53, 70);
+}
+.education{
+    border-radius: 5vh;
+}
+
+
+
+/* ================================CONTACT SECTION================================================ */
+#contact{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(20, 20, 27);
+}
+#contact .container{
+    
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+    margin-bottom: 5vh;
+} 
+
+#contact h1{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    letter-spacing: 0.5rem;
+}
+#contact a{
+    color:rgb(220, 53, 70);
+    font-size: 2rem;
+    transition: all 0.3s ease-in 0.2s;
+}
+.info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+.icon a{
+    gap: 1vh;
+    display: flex;
+    border-radius: 1.2vh;
+    align-items: center;
+}
+
+.formbut{
+    background-color: rgb(220, 53, 70);
+    padding: 1vh;
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    color: azure;
+    border: 2px solid black;
+}
+#contact a:hover{
+    background-color: #c7d5e7;
+}
+#contact .formbut:hover{
+    color: black;
+}
+#contact p{
+    color: azure;
+    font-size: 1.2rem;
+}
+
+/* ==================================FOOTER SECTION======================================== */
+
+
+.social-links a{
+    padding: 1.5vh;
+    border-radius: 2.4rem;
+    color: white;
+    transition: all 2s ease-in 0.1s;
+    background-color: rgb(220, 53, 70);
+    text-align: center;
+}
+.social-links a:hover{
+           background-color: rgb(213, 136, 108);
+           cursor: pointer;
+}
+#footer h3{
+    color: azure;
+    font-size:1.7rem;
+    padding: 1vh;
+    
+}
+#footer{
+    background-color: rgb(20, 20, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#footer .copyright{
+    color:azure;
+    padding-top: 2vh;
+    font-size: 1.2rem;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 1.5vh;
+}
